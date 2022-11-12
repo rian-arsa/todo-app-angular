@@ -17,8 +17,6 @@ export class AddTodosComponent implements OnInit {
   ngOnInit(): void {}
 
   onFormSubmit(form: NgForm) {
-    console.log(form);
-
     if (form.invalid) return (this.showValidationErrors = true);
 
     this.dataService.addTodo(new Todo(0, form.value.judul, form.value.text));

@@ -41,7 +41,6 @@ export class DataService {
   }
 
   deleteTodo(id: number) {
-    console.log(this.todos);
     const index = this.todos.findIndex((item) => item.id === id);
 
     this.todos.splice(index, 1);
