@@ -1,16 +1,48 @@
 <!-- Header Title -->
-<div class="bg-green-500">
+<div class="bg-gradient-to-r from-green-500 to-green-600">
   <div class="container mx-auto py-10">
-    <h1 class="text-2xl font-bold text-slate-200">Todo App</h1>
-    <p class="text-slate-100">Andal Front-End Developer Interview Project</p>
-    <button
-      class="bg-green-700 py-2 px-8 rounded-md mt-10 font-bold text-white shadow-xl hover:bg-green-900"
+    <h1 class="text-4xl font-bold text-slate-200 mb-2">Todo App</h1>
+    <p class="text-slate-100 text-lg">
+      Andal Front-End Developer Interview Project
+    </p>
+    <a
+      routerLink="add"
+      class="bg-green-700 py-2 px-8 rounded-md mt-10 font-bold text-white shadow-2xl hover:bg-green-800 inline-block"
     >
       + Tambah Todo
-    </button>
+    </a>
   </div>
 </div>
 
 <!-- Main Content -->
-
-<div class="container mx-auto"></div>
+<div class="container mx-auto mt-10">
+  <h1 class="text-2xl font-bold mb-2">Daftar Todo</h1>
+  <div class="flex flex-wrap gap-2">
+    <app-todo-item
+      *ngFor="let todo of todos"
+      [todo]="todo"
+      (completeClicked)="toggleCompleted(todo)"
+      (deleteClicked)="deleteTodo(todo)"
+    ></app-todo-item>
+    <!-- <div class="border border-gray-400 rounded-md p-4 w-96 bg-gray-100">
+      <p class="text-lg font-bold line-through">Complete main UI Components</p>
+      <p class="line-through">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+        expedita?
+      </p>
+      
+      <div class="flex justify-around mt-4 gap-2">
+        <button
+          class="border-green-500 border text-green-500 w-full rounded-md py-2 font-semibold hover:bg-green-100"
+        >
+          Detail
+        </button>
+        <button
+          class="bg-red-500 hover:bg-red-600 w-full rounded-md py-2 font-semibold text-white"
+        >
+          Hapus
+        </button>
+      </div>
+    </div> -->
+  </div>
+</div>
