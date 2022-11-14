@@ -25,6 +25,12 @@ CSS : - TailwindCSS
 Halaman Home
 ![image](https://user-images.githubusercontent.com/55070460/201472480-27f16058-ef0f-44a8-94cd-59c88e8dc09f.png)
 
+![image](https://user-images.githubusercontent.com/55070460/201554754-a3fbc98e-d77c-4092-b8bd-77f7c4d4fcac.png)
+
+
 
 Halaman Tambah Todo
 ![image](https://user-images.githubusercontent.com/55070460/201472500-b5c4e26c-4382-47a2-8e92-19438732cad9.png)
+
+![image](https://user-images.githubusercontent.com/55070460/201554773-4cd3bea5-f70b-4b82-99b7-e2503ea533c5.png)
+
